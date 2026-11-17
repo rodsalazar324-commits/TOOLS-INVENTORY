@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
     
     <properties>
-        <java.version>25</java.version>
+        <java.version>21</java.version>
         <vaadin.version>25.3.5</vaadin.version>
     </properties>
     
@@ -45,6 +45,22 @@
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-spring-boot-starter</artifactId>
+        </dependency>
+                <!-- JSON FILE HANDLING -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>   
+
+        <!-- PASSWORD HASHING -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-crypto</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -12,3 +12,25 @@
 node_modules/
 src/main/frontend/generated/
 vite.generated.ts
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Local credentials and user data
+application-local.properties
+data/
+
+# Certificates and private keys
+*.jks
+*.keystore
+*.p12
+*.pem
+
+# Temporary SMTP debugging files
+SmtpTest.java
+SmtpTest.class
+*.class
+smtp-cert-debug.txt
+tls-debug.txt
